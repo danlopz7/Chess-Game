@@ -1,9 +1,0 @@
-module GameStatus
-    ACTIVE = 'ACTIVE'
-    BLACK_WIN = 'BLACK_WIN'
-    WHITE_WIN = 'WHITE_WIN'
-    FORFEIT = 'FORFEIT'
-    STALEMATE = 'STALEMATE'
-    RESIGNATION = 'RESIGNATION'
-end
-  
