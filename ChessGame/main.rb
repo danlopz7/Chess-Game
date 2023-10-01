@@ -1,6 +1,6 @@
 require './chess'
 
-# this is the entry point for the current project
+# this is the entry point for the current project.
 
 help = ARGV.find { |e| help = true if e == '--help' }
 if help
