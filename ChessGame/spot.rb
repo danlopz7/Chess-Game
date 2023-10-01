@@ -19,7 +19,7 @@ class Spot
   # return original piece
   def occupySpot(piece)
     current_piece = @piece
-    # if a piece is already here, delete it, i. e. set it dead
+    # if a piece is already here, delete it, i. e. set it  dead
     # when a piece is about to kill another and occupy its space
     # then set the piece unavailable
     # Si current_piece no es nulo (es decir, si current_piece tiene un valor), entonces se establecerá @piece.available en false.
