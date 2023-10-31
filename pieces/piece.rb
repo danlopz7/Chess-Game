@@ -5,7 +5,7 @@ class Piece
   attr_accessor :available, :x, :y
   attr_reader :color
 
-  def initialize(_available, _x, _y, _color)
+  def initialize(_x, _y, _color)
     @available = true
     @x = _x
     @y = _y

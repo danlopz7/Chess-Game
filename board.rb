@@ -25,7 +25,7 @@ class Board
   end
 
   def initBoard
-    puts '$$$Welcome to my Chess game$$$'
+    puts '$$$---CONSOLE CHESS---$$$'
     setup_board
   end
 
