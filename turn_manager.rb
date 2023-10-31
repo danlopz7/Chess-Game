@@ -52,14 +52,21 @@ class TurnManager
           @board.my_board[to_x][to_y].occupySpot(selected_piece)
         end
       end
-      puts 'Invalid movement. Please Try Again: ' unless to_x
-    end until to_x
+      puts 'Invalid movement. Please Try Again: ' unless from_x && to_x
+    end until from_x && to_x
+    # to_X deberia ser reemplazado por valid movement de la pieza en juego
 
     @board.print_board
   end
 
   def obtain_coordinate(coordenada)
-    # Mapea las letras de la notación algebráica a índices numéricos
+
+    unless coordenada.match?(/^[A-Ha-h][1-8]$/)
+      puts "Wrong input #{coordenada}"
+      return nil
+    end
+
+    # Mapea las letras a índices numéricos
     letra_a_numero = {
       'A' => 0,
       'B' => 1,
@@ -71,7 +78,10 @@ class TurnManager
       'H' => 7
     }
 
-    # Extrae la letra y el número de la coordenada
+    letra_a_numero_lowercase = letra_a_numero.map { |k, v| [k.downcase, v] }.to_h
+    letra_a_numero.merge!(letra_a_numero_lowercase)
+
+    # Extrae la letra y el número de "coordenada"
     letra = coordenada[0]
     numero = coordenada[1].to_i
 

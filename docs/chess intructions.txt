@@ -1,0 +1,57 @@
+A Game class controls the flow of a game. The class has attributes:
+playedMoves - Keep a record of moves
+turn - Indicate either it is a Black's turn or a White's turn
+players - Represent the two players, this can be Human/Human, Computer/Computer or Human/Computer
+result - Indicate the result of a game
+checkStatus - Indicate which side is being checked or checkmated
+
+inicia juego
+1. Al crear la instancia GameChess: 
+en el constructor:
+- crea dos juegadores humanos que se guardan en variables p1 y p2
+- crea la instancia board que inicia un nuevo tablero. 
+ - board crea las piezas y las agrega
+ - 
+ 
+- se ejecuta el metodo start_game que usa un bucle while para turnar los turnos de cada jugador mientras ninguno haya ganado con la condicion this.board.getwin()
+ - dentro de cada turno se llamara al metodo processTurn
+ - 
+- el input tiene que transformar ej: A1 a una coordenada.
+- turnManager debe transformar ese input y revisar si es legal
+el movimiento. si es legal mandar las nuevas coordenadas
+Board
+- metodo que siempre ejecute un tablero 
+
+GameChess tiene status del juego 
+=================================================
+ejecucion del programa:
+welcome to chess
+comenzar a jugar automaticamente
+imprimir tablero
+consola pide coordenada y pieza a p1:
+ - va revisar si la coordenada y pieza son validas
+*mueve la pieza
+vuelve a pintar el tablero
+consola pide coordenada y pieza a p2:
+ - va revisar si la coordenada y pieza son validas
+*mueve la pieza
+vuelve a pintar el tablero
+.
+.
+.
+hasta que haya un checkmate
+cuando mueve la pieza verifica si hay un checkmate
+si lo hay ya no imprime el tablero sino que imprime
+Px ha ganado
+se termina el juego
+
+DESCRIPCION Y RESPONSABILIDAD DE CADA CLASE:
+
+BOARD:
+el board esta compuesto de spots
+SPOT:
+Spot: cada spot tiene una pieza o un espacio vacio y una coordenada
+
+MOVE:
+
+

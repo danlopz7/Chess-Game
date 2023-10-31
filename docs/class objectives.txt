@@ -1,0 +1,27 @@
+class objectives
+
+Game:
+Contains the Board and 2 Players
+Commands List (for history tracking)
+
+Board (Singleton):
+Hold spots with 8*8
+Initialize the piece when game start
+Move Piece
+Remove Piece
+
+Spot:
+Hold Pieces
+
+Piece (Abstract):
+Hold the color to represent the affiliation.
+Extended by concreted classes with 8 Pawns, 2 Rooks, 2 Bishops, 2 Knights, 1 Queen, 1 King
+Concreted classes define the detail step approach
+
+Player (Abstract):
+Has a list of piece reference it owns.
+Concreted classes for Human and Computer players
+
+Command
+Piece
+Destination x, y
