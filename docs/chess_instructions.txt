@@ -12,7 +12,7 @@ en el constructor:
 - crea la instancia board que inicia un nuevo tablero. 
  - board crea las piezas y las agrega
  - 
- 
+
 - se ejecuta el metodo start_game que usa un bucle while para turnar los turnos de cada jugador mientras ninguno haya ganado con la condicion this.board.getwin()
  - dentro de cada turno se llamara al metodo processTurn
  - 
@@ -53,5 +53,4 @@ SPOT:
 Spot: cada spot tiene una pieza o un espacio vacio y una coordenada
 
 MOVE:
-
 
