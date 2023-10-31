@@ -17,7 +17,6 @@ class ChessGame
 
   def setup
     @board.initBoard
-    #select_pieces
     start_game
   end
 
@@ -36,11 +35,6 @@ class ChessGame
       end
     end
   end
-
-  # def select_pieces
-  #   puts 'Player 1 selects color: 1. Black pieces 2. White pieces'
-  #   @p1
-  # end
 
   # def get_status
   #   @status
