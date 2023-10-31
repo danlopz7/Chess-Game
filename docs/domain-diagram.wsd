@@ -1,5 +1,5 @@
 @startuml ClassDiagram
-object AAA
+
 object ChessGame
 object board
 object player
