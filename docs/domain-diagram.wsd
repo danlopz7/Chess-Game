@@ -20,10 +20,10 @@ object receiveInputs
 
 object piecesGoals
 object detailStepApproach
-object name
-object isWhite
-object location
-object isDead
+' object name
+' object isWhite
+' object location
+' object isDead
 
 object playerGoals
 object provideInputs
@@ -71,11 +71,10 @@ turns o-- turnGoals
 turnGoals <|-- checkMovements
 turnGoals <|-- receiveInputs
 
-pieces *-- name
-pieces *-- isWhite
-pieces *-- location
-pieces *-- isDead
-
+' pieces *-- name
+' pieces *-- isWhite
+' pieces *-- location
+' pieces *-- isDead
 pieces <|-- rook
 pieces <|-- bishop
 pieces <|-- knight
